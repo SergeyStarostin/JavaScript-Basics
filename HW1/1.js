@@ -13,8 +13,9 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const celsiusDegree = prompt("Введите температуру в градусах Цельсия");
+const celsiusDegree = +prompt("Введите температуру в градусах Цельсия");
+//const celsiusDegree = Number.parseFloat(prompt("Введите температуру в градусах Цельсия"));
 const fahrenheitDegree = celsiusDegree * (9 / 5) + 32;
 alert(
-  "Цельсий: " + celsiusDegree + ", Фаренгейт: " + fahrenheitDegree
+  "Цельсий: " + celsiusDegree + ", Фаренгейт: " + Math.round(fahrenheitDegree * 100) / 100
 );
