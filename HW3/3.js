@@ -17,7 +17,7 @@
  * @param {number} num3 третье число
  * @return {number} максимальное число
  */
-function searchMax(num1, num2, num3) {
+/*function searchMax(num1, num2, num3) {
   if (num1 >= num2 && num1 >= num3) {
     return num1;
   }
@@ -25,6 +25,9 @@ function searchMax(num1, num2, num3) {
     return num2;
   }
   return num3;
+}*/
+function searchMax(num1, num2, num3) {
+  return Math.max(num1, num2, num3);
 }
 
 const firstNum = +prompt("Введите первое число");

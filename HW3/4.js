@@ -36,7 +36,9 @@ function sum(num1, num2) {
 function diff(num1, num2) {
   if (num1 > num2) {
     return num1 - num2;
-  } else return num2 - num1;
+  } else {
+    return num2 - num1;
+  }
 }
 
 /**
@@ -63,27 +65,10 @@ const num1 = +prompt("Введите первое число");
 const num2 = +prompt("Введите второе число");
 
 if (Number.isFinite(num1) && Number.isFinite(num2)) {
-  console.log(
-    `Сумма чисел ${num1} и ${num2} равна ${sum(num1, num2)}`
-  );
-  console.log(
-    `Разность чисел ${num1} и ${num2} равна ${diff(
-      num1,
-      num2
-    )}`
-  );
-  console.log(
-    `Произведение чисел ${num1} и ${num2} равно ${mult(
-      num1,
-      num2
-    )}`
-  );
-  console.log(
-    `Частное чисел ${num1} и ${num2} равно ${divide(
-      num1,
-      num2
-    )}`
-  );
+  console.log(`Сумма чисел ${num1} и ${num2} равна ${sum(num1, num2)}`);
+  console.log(`Разность чисел ${num1} и ${num2} равна ${diff(num1, num2)}`);
+  console.log(`Произведение чисел ${num1} и ${num2} равно ${mult(num1, num2)}`);
+  console.log(`Частное чисел ${num1} и ${num2} равно ${divide(num1, num2)}`);
 } else {
   console.log("Введены некорректные данные");
 }

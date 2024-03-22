@@ -12,10 +12,9 @@
  * @param {number} num число, вводимое пользователем
  * @return {number} 3 степень числа
  */
-
 function getThirdPower(num) {
   return num ** 3;
-};
+}
 
 const number = +prompt("Введите число ");
 console.log(`Число "${number}" в 3 степени = ${getThirdPower(number)}`);
