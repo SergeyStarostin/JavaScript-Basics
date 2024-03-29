@@ -31,6 +31,12 @@ const post = {
 };
 
 console.log(`Автор: ${post.author}`);
-console.log(`Количество дизлайков автора ${post.comments[0].userName}: ${post.comments[0].rating.dislikes}`);
-console.log(`ID автора ${post.comments[1].userName}: ${post.comments[1].userId}`);
-console.log(`Комментарий автора ${post.comments[1].userName}: ${post.comments[1].text}`);
+console.log(
+  `Количество дизлайков ${post.comments[0].userName}: ${post.comments[0].rating.dislikes}`
+);
+console.log(
+  `ID пользователя ${post.comments[1].userName}: ${post.comments[1].userId}`
+);
+console.log(
+  `Комментарий пользователя ${post.comments[1].userName}: ${post.comments[1].text}`
+);
