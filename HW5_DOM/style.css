@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.content {
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+  padding: 7px;
+  gap: 20px;
+  width: auto;
+}
+
+.item-img {
+  object-fit: contain;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.item-title {
+  margin: 5px 0px;
+}
+
+.item-year {
+  margin: 5px 0px;
+}
+
+.item-rating {
+  margin: 5px 0px;
+  color: red;
+}
+
+.item-cast {
+  margin: 5px 0px;
+}
+
+.item-genre {
+  margin: 10px 0px;
+  color: grey;
+}
+
+.item-desc {
+  margin: 10px 0px;
+  font-size: 14pt;
+}
