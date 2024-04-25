@@ -41,11 +41,17 @@ const findElementByClass = function (item, className) {
   }
   for (let i = 0; i < item.childNodes.length; i++) {
     if (item.childNodes[i].nodeType === 1) {
-      return findElementByClass(item.childNodes[i], className);
+      const foundElement = findElementByClass(item.childNodes[i], className);
+      if (foundElement) {
+        return foundElement;
+      }
     }
   }
 };
 
 const itemEl = document.getElementsByClassName("conteiner")[0];
 const nodeEl = findElementByClass(itemEl, "my-class");
-console.log("Первый найденный элемент с указанным классом в этом дереве:", nodeEl);
+console.log(
+  "Первый найденный элемент с указанным классом в этом дереве:",
+  nodeEl
+);
