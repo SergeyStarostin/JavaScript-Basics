@@ -1,10 +1,11 @@
 {
-  "name": "randomPassGenNew",
+  "name": "random_pass_gen_test",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
+  "repository": "https://github.com/SergeyStarostin/JavaScript-Basics/tree/main/HW2_Node-js",
   "keywords": [],
   "author": "",
   "license": "ISC",
