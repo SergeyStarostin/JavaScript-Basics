@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW3_JS-Advanced (add reviews)</title>
+    <script src="./sources/addReview.js" defer></script>
+    <link rel="stylesheet" href="./styles/Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Добавить отзыв</h2>
+      <form id="addReviewForm">
+        <div>
+          <label for="productName">Название продукта:</label>
+          <input type="text" id="productName" required />
+        </div>
+        <div>
+          <label for="review">Отзыв:</label>
+          <textarea id="review" rows="5" required></textarea>
+        </div>
+        <button type="submit">Добавить отзыв</button>
+      </form>
+      <a href="./reviews.html">
+        <h2>Посмотреть отзывы</h2>
+      </a>
+    </div>
+  </body>
+</html>
